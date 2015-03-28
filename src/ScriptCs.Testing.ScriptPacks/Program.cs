@@ -18,6 +18,7 @@
             LogConfigurator.DoYourWorst();
 
             var scriptCsExe = ConfigurationManager.AppSettings["ScriptCsExe"];
+            log.InfoFormat("Using '{0}'..", scriptCsExe);
 
             var namesAndTypes = GetScriptPackNamesAndTypes(args ?? new string[0]);
             log.InfoFormat(
