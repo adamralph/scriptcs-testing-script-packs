@@ -1,0 +1,9 @@
+.nuget/[Nn]u[Gg]et.exe
+artifacts
+bin
+obj
+packages
+*.suo
+*.user
+Thumbs.db
+*.sln.ide
