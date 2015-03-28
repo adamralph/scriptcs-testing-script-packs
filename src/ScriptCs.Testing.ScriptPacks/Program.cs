@@ -28,7 +28,7 @@
             var failedRuns = new List<string>();
             foreach (var nameAndType in namesAndTypes)
             {
-                if (!Directory.Exists(nameAndType.Item1))
+                if (!File.Exists(Path.Combine(nameAndType.Item1, "scriptcs_packages.config")))
                 {
                     log.InfoFormat("Installing '{0}'...", nameAndType.Item1);
                     try
